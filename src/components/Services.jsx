@@ -16,15 +16,12 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="py-24 relative overflow-hidden">
-      <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-royal-blue/10 blur-[120px] rounded-full pointer-events-none"></div>
-      <div className="absolute bottom-0 left-0 w-1/2 h-1/2 bg-cyan-accent/10 blur-[120px] rounded-full pointer-events-none"></div>
-
-      <div className="container mx-auto px-4 relative z-10">
+    <section id="services" className="py-24 relative bg-gray-50">
+      <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-cyan-accent font-bold tracking-widest uppercase text-sm mb-2">Our Expertise</h2>
-          <h3 className="text-4xl md:text-5xl font-bold mb-4">Premium <span className="text-gradient">Services</span> We Offer</h3>
-          <div className="w-24 h-1 bg-gradient-to-r from-royal-blue to-cyan-accent mx-auto rounded-full"></div>
+          <h2 className="text-brand-blue font-bold tracking-widest uppercase text-sm mb-2">Our Expertise</h2>
+          <h3 className="text-4xl md:text-5xl font-extrabold mb-4 text-brand-black">Premium Services</h3>
+          <div className="w-24 h-1 bg-brand-black mx-auto rounded-full"></div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
@@ -34,14 +31,14 @@ export default function Services() {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="glass-card p-6 flex flex-col items-center text-center group cursor-pointer hover:-translate-y-2"
+              transition={{ duration: 0.5, delay: (idx % 5) * 0.1 }}
+              className="bg-white border border-gray-100 p-6 rounded-2xl flex flex-col items-center text-center group cursor-pointer hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
             >
-              <div className="w-16 h-16 rounded-2xl bg-dark-navy/50 border border-white/10 flex items-center justify-center text-cyan-accent mb-6 group-hover:bg-gradient-to-br group-hover:from-royal-blue group-hover:to-cyan-accent group-hover:text-white transition-all duration-500 shadow-[0_0_15px_rgba(25,211,255,0.1)] group-hover:shadow-[0_0_20px_rgba(25,211,255,0.4)]">
+              <div className="w-16 h-16 rounded-2xl bg-gray-50 flex items-center justify-center text-brand-black mb-6 group-hover:bg-brand-black group-hover:text-white transition-colors duration-300">
                 {service.icon}
               </div>
-              <h4 className="text-lg font-bold text-white mb-2 group-hover:text-cyan-accent transition-colors">{service.title}</h4>
-              <p className="text-sm text-gray-400">{service.desc}</p>
+              <h4 className="text-lg font-bold text-brand-black mb-2">{service.title}</h4>
+              <p className="text-sm text-brand-gray">{service.desc}</p>
             </motion.div>
           ))}
         </div>

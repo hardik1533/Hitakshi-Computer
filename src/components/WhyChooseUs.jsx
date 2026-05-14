@@ -12,7 +12,7 @@ export default function WhyChooseUs() {
   ];
 
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section className="py-24 relative bg-white">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <motion.div
@@ -21,21 +21,21 @@ export default function WhyChooseUs() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-cyan-accent font-bold tracking-widest uppercase text-sm mb-2">Why Choose Us</h2>
-            <h3 className="text-4xl md:text-5xl font-bold mb-6">The Best IT <span className="text-gradient">Solutions</span> in Town</h3>
-            <p className="text-gray-300 leading-relaxed text-lg mb-8">
-              At Hitakshi Computer, we prioritize quality, transparency, and customer satisfaction. Our commitment to excellence has made us the preferred choice for all computing and security needs in Una.
+            <h2 className="text-brand-blue font-bold tracking-widest uppercase text-sm mb-2">Why Choose Us</h2>
+            <h3 className="text-4xl md:text-5xl font-extrabold mb-6 text-brand-black">The Best IT Solutions in Town</h3>
+            <p className="text-brand-gray leading-relaxed text-lg mb-8">
+              At Hitaksi Computers Sales Service, we prioritize quality, transparency, and customer satisfaction. Our commitment to excellence has made us the preferred choice for all computing and security needs.
             </p>
             
             <div className="space-y-6">
               {reasons.slice(0,3).map((reason, idx) => (
                 <div key={idx} className="flex gap-4 items-start">
-                  <div className="mt-1 p-3 rounded-xl bg-gradient-to-br from-royal-blue to-cyan-accent text-white shadow-[0_0_15px_rgba(10,108,255,0.4)]">
+                  <div className="mt-1 p-3 rounded-xl bg-gray-50 text-brand-black border border-gray-200">
                     {reason.icon}
                   </div>
                   <div>
-                    <h4 className="text-xl font-bold text-white mb-1">{reason.title}</h4>
-                    <p className="text-gray-400">{reason.desc}</p>
+                    <h4 className="text-xl font-bold text-brand-black mb-1">{reason.title}</h4>
+                    <p className="text-brand-gray">{reason.desc}</p>
                   </div>
                 </div>
               ))}
@@ -50,18 +50,18 @@ export default function WhyChooseUs() {
             className="grid grid-cols-1 sm:grid-cols-2 gap-6"
           >
             {reasons.slice(3,6).map((reason, idx) => (
-              <div key={idx} className="glass-card-blue p-6 text-center hover:-translate-y-2 transition-transform duration-300">
-                <div className="w-14 h-14 mx-auto rounded-full bg-dark-navy flex items-center justify-center text-cyan-accent border border-cyan-accent/30 mb-4 shadow-[0_0_10px_rgba(25,211,255,0.2)]">
+              <div key={idx} className="bg-gray-50 border border-gray-100 p-6 rounded-2xl text-center hover:-translate-y-2 transition-transform duration-300">
+                <div className="w-14 h-14 mx-auto rounded-full bg-white flex items-center justify-center text-brand-black border border-gray-200 mb-4">
                   {reason.icon}
                 </div>
-                <h4 className="text-lg font-bold text-white mb-2">{reason.title}</h4>
-                <p className="text-sm text-gray-400">{reason.desc}</p>
+                <h4 className="text-lg font-bold text-brand-black mb-2">{reason.title}</h4>
+                <p className="text-sm text-brand-gray">{reason.desc}</p>
               </div>
             ))}
             
-            <div className="glass-card p-6 flex flex-col items-center justify-center text-center bg-gradient-to-br from-cyan-accent/20 to-royal-blue/20 border-cyan-accent/50">
+            <div className="bg-brand-black p-6 rounded-2xl flex flex-col items-center justify-center text-center">
               <h4 className="text-4xl font-extrabold text-white mb-2">100%</h4>
-              <p className="text-sm text-cyan-accent font-medium uppercase tracking-wider">Satisfaction</p>
+              <p className="text-sm text-gray-300 font-medium uppercase tracking-wider">Satisfaction</p>
             </div>
           </motion.div>
         </div>
