@@ -24,7 +24,7 @@ export default function WhyChooseUs() {
             <h2 className="text-cyan-accent font-bold tracking-widest uppercase text-xs md:text-sm mb-2">Why Choose Us</h2>
             <h3 className="text-3xl md:text-5xl font-bold mb-4 md:mb-6">The Best IT <span className="text-gradient">Solutions</span> in Town</h3>
             <p className="text-sm md:text-lg text-gray-300 leading-relaxed mb-6 md:mb-8">
-              At Hitaksi Computers, we prioritize quality, transparency, and customer satisfaction. Our commitment to excellence has made us the preferred choice for all computing and security needs in Una.
+              At Hitakshi Computers, we prioritize quality, transparency, and customer satisfaction. Our commitment to excellence has made us the preferred choice for all computing and security needs in Una.
             </p>
             
             <div className="space-y-4 md:space-y-6">

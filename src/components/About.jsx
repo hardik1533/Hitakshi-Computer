@@ -32,9 +32,9 @@ export default function About() {
             <div className="relative glass-card p-1 rounded-3xl overflow-hidden aspect-video lg:aspect-square">
               <div className="w-full h-full rounded-[20px] bg-gradient-to-br from-dark-navy via-royal-blue/40 to-dark-navy flex flex-col items-center justify-center p-6 md:p-8 text-center relative overflow-hidden">
                 <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCI+CjxwYXRoIGQ9Ik0wIDBoNDB2NDBIMHoiIGZpbGw9Im5vbmUiLz4KPHBhdGggZD0iTTAgMTBoNDBNMTAgMHY0ME0wIDIwaDQwTTIwIDB2NDBNMCAzMGg0ME0zMCAwdjQwIiBzdHJva2U9InJnYmEoMjU1LCAyNTUsIDI1NSwgMC4wMikiIHN0cm9rZS13aWR0aD0iMSIvPgo8L3N2Zz4=')]"></div>
-                <img src="https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=600&q=80" alt="Hitaksi Computers Store" className="absolute inset-0 w-full h-full object-cover opacity-30 mix-blend-screen" />
+                <img src="https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=600&q=80" alt="Hitakshi Computers Store" className="absolute inset-0 w-full h-full object-cover opacity-30 mix-blend-screen" />
                 <Cpu className="w-16 h-16 md:w-24 md:h-24 text-cyan-accent mb-4 md:mb-6 relative z-10 drop-shadow-lg" />
-                <h4 className="text-xl md:text-2xl font-bold text-white relative z-10">Hitaksi Computers Sales Service</h4>
+                <h4 className="text-xl md:text-2xl font-bold text-white relative z-10">Hitakshi Computers Sales Service</h4>
                 <p className="text-sm md:text-base text-gray-300 mt-2 relative z-10">Owned by <span className="text-cyan-accent font-semibold">Haresh Vanja</span></p>
               </div>
             </div>
@@ -60,7 +60,7 @@ export default function About() {
             </div>
             
             <p className="text-sm md:text-lg text-gray-300 leading-relaxed">
-              Hitaksi Computers Sales Service is a trusted computer and laptop store dedicated to providing high-quality IT solutions. We specialize in dealing with new and refurbished systems, professional repairing, and top-notch CCTV surveillance setups.
+              Hitakshi Computers Sales Service is a trusted computer and laptop store dedicated to providing high-quality IT solutions. We specialize in dealing with new and refurbished systems, professional repairing, and top-notch CCTV surveillance setups.
             </p>
             
             <p className="text-sm md:text-base text-gray-400 leading-relaxed">

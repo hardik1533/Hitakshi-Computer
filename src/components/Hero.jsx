@@ -23,7 +23,7 @@ export default function Hero() {
           
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight">
             Welcome to <br className="hidden sm:block" />
-            <span className="text-gradient font-extrabold block mt-2">Hitaksi Computers</span>
+            <span className="text-gradient font-extrabold block mt-2">Hitakshi Computers</span>
           </h1>
           
           <p className="text-base md:text-xl text-gray-300 max-w-xl leading-relaxed mx-auto lg:mx-0">
@@ -72,13 +72,13 @@ export default function Hero() {
                className="relative z-10 glass-card p-4 rounded-3xl w-4/5 h-4/5 flex items-center justify-center border-white/20 bg-white/5"
              >
                 <div className="absolute inset-0 bg-gradient-to-br from-royal-blue/20 to-cyan-accent/10 rounded-3xl"></div>
-                <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&w=800&q=80" alt="Hitaksi Computers" className="w-full h-full object-cover rounded-[18px] opacity-80 mix-blend-screen" />
+                <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&w=800&q=80" alt="Hitakshi Computers" className="w-full h-full object-cover rounded-[18px] opacity-80 mix-blend-screen" />
              </motion.div>
 
              <motion.div 
                 animate={{ y: [10, -10, 10], x: [5, -5, 5] }}
                 transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-                className="absolute top-10 right-10 glass-card-blue p-4 rounded-xl flex items-center gap-3"
+                className="absolute top-16 right-4 glass-card-blue p-4 rounded-xl flex items-center gap-3 z-30"
              >
                <div className="bg-cyan-accent/20 p-2 rounded-lg"><Users className="w-6 h-6 text-cyan-accent"/></div>
                <div>
@@ -90,7 +90,7 @@ export default function Hero() {
              <motion.div 
                 animate={{ y: [-15, 15, -15], x: [-5, 5, -5] }}
                 transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-                className="absolute bottom-20 left-0 glass-card-blue p-4 rounded-xl flex items-center gap-3"
+                className="absolute bottom-24 left-4 glass-card-blue p-4 rounded-xl flex items-center gap-3 z-30"
              >
                <div className="bg-royal-blue/30 p-2 rounded-lg"><Wrench className="w-6 h-6 text-white"/></div>
                <div>

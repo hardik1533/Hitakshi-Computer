@@ -16,21 +16,21 @@ const initialGallery = [
 
 export const AppProvider = ({ children }) => {
   const [products, setProducts] = useState(() => {
-    const saved = localStorage.getItem('hitaksi_products');
+    const saved = localStorage.getItem('hitakshi_products');
     return saved ? JSON.parse(saved) : initialProducts;
   });
 
   const [gallery, setGallery] = useState(() => {
-    const saved = localStorage.getItem('hitaksi_gallery');
+    const saved = localStorage.getItem('hitakshi_gallery');
     return saved ? JSON.parse(saved) : initialGallery;
   });
 
   useEffect(() => {
-    localStorage.setItem('hitaksi_products', JSON.stringify(products));
+    localStorage.setItem('hitakshi_products', JSON.stringify(products));
   }, [products]);
 
   useEffect(() => {
-    localStorage.setItem('hitaksi_gallery', JSON.stringify(gallery));
+    localStorage.setItem('hitakshi_gallery', JSON.stringify(gallery));
   }, [gallery]);
 
   const addProduct = (product) => setProducts([...products, { ...product, id: Date.now() }]);

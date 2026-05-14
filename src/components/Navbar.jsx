@@ -27,12 +27,12 @@ export default function Navbar() {
         <a href="#home" className="flex items-center">
           {/* Logo */}
           <div className="bg-white/90 p-1 md:p-2 rounded-lg shadow-[0_0_15px_rgba(25,211,255,0.3)]">
-             <img src="/logo.png" alt="Hitaksi Computers" className="h-8 md:h-10 object-contain" onError={(e) => {
+             <img src="/logo.png" alt="Hitakshi Computers" className="h-8 md:h-10 object-contain" onError={(e) => {
                e.target.style.display = 'none';
                e.target.nextSibling.style.display = 'flex';
              }} />
              <div className="hidden flex-col px-2" style={{ display: 'none' }}>
-               <span className="text-xl font-bold text-dark-navy tracking-wide">HITAKSI</span>
+               <span className="text-xl font-bold text-dark-navy tracking-wide">HITAKSHI</span>
              </div>
           </div>
         </a>

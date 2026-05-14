@@ -14,12 +14,12 @@ export default function Footer() {
           <div className="space-y-4 md:space-y-6">
             <a href="#home" className="flex items-center">
               <div className="bg-white/90 p-1 md:p-2 rounded-lg">
-                <img src="/logo.png" alt="Hitaksi Computers Sales Service" className="h-8 md:h-10 object-contain" onError={(e) => {
+                <img src="/logo.png" alt="Hitakshi Computers Sales Service" className="h-8 md:h-10 object-contain" onError={(e) => {
                   e.target.style.display = 'none';
                   e.target.nextSibling.style.display = 'flex';
                 }} />
                 <div className="hidden flex-col px-2" style={{ display: 'none' }}>
-                  <span className="text-xl font-bold text-dark-navy tracking-wide">HITAKSI</span>
+                  <span className="text-xl font-bold text-dark-navy tracking-wide">HITAKSHI</span>
                 </div>
               </div>
             </a>
@@ -94,7 +94,7 @@ export default function Footer() {
 
         <div className="flex flex-col md:flex-row justify-between items-center pt-6 md:pt-8 border-t border-white/10 gap-4">
           <p className="text-gray-500 text-xs md:text-sm text-center md:text-left">
-            &copy; {new Date().getFullYear()} Hitaksi Computers Sales Service. All rights reserved. <br className="md:hidden" />Designed with <span className="text-cyan-accent">♥</span>
+            &copy; {new Date().getFullYear()} Hitakshi Computers Sales Service. All rights reserved. <br className="md:hidden" />Designed with <span className="text-cyan-accent">♥</span>
           </p>
           <button 
             onClick={scrollToTop}
